@@ -1,33 +1,48 @@
 # BBT 1203 CAT 2 Submission
 
-## Question 1: OOP Concepts
-1. **Encapsulation (Student.java)**
-   - Private attributes: name (String), grade (int)
-   - Public getters and setters implemented
-   - Grade validation: 0-100 range check
+## Overview
+This repository contains solutions for CAT 2 of Object-Oriented Programming I (BBT 1203). The code demonstrates key OOP concepts in Java including encapsulation, method overloading/overriding, abstraction, and exception handling.
 
-2. **Method Overloading and Overriding**
-   - MathOperations.java: Two multiply() methods (2 and 3 parameters)
-   - Animal.java: Base class with makeSound()
-   - Dog.java & Cat.java: Override makeSound()
-   - Main.java: Demonstrates polymorphism
+## Files and Structure
 
-## Question 2: Abstraction and Exception Handling
-1. **Abstraction**
-   - Appliance.java: Abstract class with turnOn()
-   - Fan.java & TV.java: Concrete implementations
-   - ApplianceDemo.java: Shows abstraction in action
+### Question 1: OOP Concepts
+1. **Student.java**
+   - Implements encapsulation with private `name` and `grade` attributes
+   - Public getters and setters
+   - Grade validation (0-100 range)
 
-2. **Exception Handling**
-   - DivisionProgram.java:
-     - Takes two numbers from user
-     - Handles division by zero with try-catch
-     - Displays "Cannot divide by zero!" message
+2. **MathOperations.java**
+   - Demonstrates method overloading with two `multiply()` methods:
+     - Two integers
+     - Three integers
 
-## Compilation and Running
-- All .java files compile without errors
-- Use `javac *.java` to compile
-- Run demos with:
-  - `java Main` (Q1 polymorphism)
-  - `java ApplianceDemo` (Q2 abstraction)
-  - `java DivisionProgram` (Q2 exception handling)
+3. **Animal.java**, **Dog.java**, **Cat.java**, **Main.java**
+   - Implements method overriding and polymorphism
+   - `Animal` base class with `makeSound()`
+   - `Dog` and `Cat` subclasses override `makeSound()`
+   - `Main` demonstrates polymorphic behavior
+
+### Question 2: Abstraction and Exception Handling
+4. **Appliance.java**, **Fan.java**, **TV.java**, **ApplianceDemo.java**
+   - Demonstrates abstraction
+   - `Appliance` abstract class with `turnOn()`
+   - `Fan` and `TV` concrete implementations
+   - `ApplianceDemo` shows abstraction in action
+
+5. **DivisionProgram.java**
+   - Implements exception handling
+   - Handles `ArithmeticException` for division by zero
+   - Displays "Cannot divide by zero!" message
+
+## Compilation and Execution
+1. Compile all files:
+
+2. Run demonstrations:
+- Polymorphism: `java Main`
+- Abstraction: `java ApplianceDemo`
+- Exception Handling: `java DivisionProgram`
+
+## Notes
+- All code compiles and runs successfully
+- Follows CAT 2 guidelines for structure and clarity
+- Submit this repository link within the allocated time
